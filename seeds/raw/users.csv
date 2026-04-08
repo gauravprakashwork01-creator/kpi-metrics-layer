@@ -1,0 +1,11 @@
+user_id,signup_date,signup_channel,country
+1,2026-01-01,organic,US
+2,2026-01-03,paid_search,US
+3,2026-01-10,referral,CA
+4,2026-02-01,email,US
+5,2026-02-15,organic,GB
+6,2026-03-01,paid_social,US
+7,2026-03-10,referral,DE
+8,2026-03-12,organic,US
+9,2026-03-20,email,CA
+10,2026-04-01,paid_search,US

@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_users
+    description: Cleaned user attributes from the raw users dataset.
+    columns:
+      - name: user_id
+        tests: [not_null, unique]
+
+  - name: stg_transactions
+    description: Standardized transactions with typed financial values.
+
+  - name: stg_sessions
+    description: Standardized sessions with a session duration metric.
+
+  - name: dim_users
+    description: User dimension with acquisition and first purchase attributes.
+    columns:
+      - name: user_id
+        tests: [not_null, unique]
+
+  - name: fact_transactions
+    description: Transaction fact table with gross, refund, and net revenue amounts.
+
+  - name: fact_sessions
+    description: Session fact table used for funnel and retention analysis.
+
+  - name: kpi_revenue
+    description: Monthly revenue KPI rollup.
+
+  - name: kpi_conversion_rate
+    description: Monthly conversion KPI based on converted sessions / total sessions.
+
+  - name: kpi_retention
+    description: Cohort retention KPI by months since signup.

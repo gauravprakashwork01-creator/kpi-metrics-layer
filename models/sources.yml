@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    description: Raw operational data loaded from application events.
+    tables:
+      - name: users
+        description: User profile and acquisition attributes.
+      - name: transactions
+        description: Purchase and refund events.
+      - name: sessions
+        description: Website/app sessions and conversion flags.
